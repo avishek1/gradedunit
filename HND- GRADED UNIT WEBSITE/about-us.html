@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>title</title>
+<!--main font sheet-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+<!--- CSS --->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+<!---- End CSS --->
+
+</head>
+<body>
+	<div class="wraper">
+    	<div class="inerwraper">
+        	<!--- Header --->
+        	<div class="header">
+            	<div class="logo">
+                	<h1>Logo</h1>
+                </div>
+                <div class="_3d_1"><img src="images/3d_1.png" /></div>
+                <div class="navigation_area">
+                	<ul>
+	                <li><a href ="index.html" class="active">Home</a></li>
+                     	<li><a href="about-us.html">About Us</a></li>
+                    	<li><a href="blog.html">Blog</a></li>
+                    	<li><a href="products.html">Products</a></li>
+                    	<li><a href="contact-us.html">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="right_area">
+                    <div class="_3d_2"><img src="images/3d_2.png" /></div>
+                    <div class="login_area">
+                    	<p>Login/Register</p>
+                    </div>
+                    <div class="_3d_3"><img src="images/3d_3.png" /></div>
+                    <div class="cart"><img src="images/cart.png" /></div>
+                </div>
+            </div>
+            <!--- End Header ---->
+            
+            
+            <!--- Mobile Header --->
+            <div class="mobile_header">
+            	<div class="menu_bar"><img src="images/menu.png" /></div>
+                <div class="mobile_logo"><a href="#"><h1>LOGO</h1></a></div>
+                <div class="login_area mobile_login">
+                    <p>Login/Register</p>
+                </div>
+                <div class="mobile_navigation">
+                	<ul>
+                    	<li><a href="index.html">Home</a></li>
+                    	<li><a href="abput-us.html">About Us</a></li>
+                    	<li><a href="blog.html">Blog</a></li>
+                    	<li><a href="products.html">Products</a></li>
+                    	<li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--- End Mobile Header --->
+            
+            
+            
+            <!--- Content --->
+<h1> About us </h1>
+<br>
+<p> 
+Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no rejoiced. End friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain ten promise. No finished my an likewise cheerful packages we. For assurance concluded son something depending discourse see led collected. Packages oh no denoting my advanced humoured. Pressed be so thought natural. 
+
+Your it to gave life whom as. Favourable dissimilar resolution led for and had. At play much to time four many. Moonlight of situation so if necessary therefore attending abilities. Calling looking enquire up me to in removal. Park fat she nor does play deal our. Procured sex material his offering humanity laughing moderate can. Unreserved had she nay dissimilar admiration interested. Departure performed exquisite rapturous so ye me resources. 
+
+In post mean shot ye. There out her child sir his lived. </p>
+<br> <p>
+Design at uneasy me season of branch on praise esteem. Abilities discourse believing consisted remaining to no. Mistaken no me denoting dashwood as screened. Whence or esteem easily he on. Dissuade husbands at of no if disposal. 
+
+Wrote water woman of heart it total other. </p>
+
+<br>
+
+            <!--- End content ---->
+
+            
+            <!--- Footer---->
+            <div class="footer">
+            	<div class="accept">
+                	<h1>We Accept</h1>
+                </div>
+                <div class="_3d_1" id="desktop"><img src="images/3d_1.png" /></div>
+                <div class="footer_navigation">
+                	<ul>
+                    	<li><a href="#"><img src="images/indexpagemobilefriendly_19.png" /></a></li>
+                    	<li><a href="#">Privacy Policy</a></li>
+                    	<li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="right_area_footer">
+                    <div class="_3d_2" id="desktop"><img src="images/3d_2.png" /></div>
+                    <div class="social_area">
+                    	<a href="#"><img src="images/facebook.png" /></a>
+                        <a href="#"><img src="images/twiter.png" /></a>
+                    </div>
+                    <div class="_3d_3" id="desktop"><img src="images/3d_3.png" /></div>
+                    <div class="cart" id="desktop"></div>
+                </div>
+            </div>
+            <!--- End Footer---->
+        </div>
+    </div>
+<!--- Banner Javascript ------>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(e) {
+        $('.menu_bar').click(function(e) {
+            $('.mobile_navigation').slideToggle(200);
+        });
+		
+		$('.banner_main').slick({
+		  dots: false,
+		  infinite: true,
+		  speed: 300,
+		  autoplay : true,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			  }
+			},
+			{
+			  breakpoint: 600,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+		  ]
+		});
+    });
+</script>
+</body>
+</html>
